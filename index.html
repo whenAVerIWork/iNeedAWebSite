@@ -3,6 +3,16 @@
     <head>
         <title>大同大同國貨好</title>
         <style>
+            @media screen and (max-width: 600px) {
+                .googlemap {
+                    margin: 10px !important;
+                }
+                .googlemap > iframe {
+                    width: 100% !important;
+                    height: auto !important;
+                    min-height: calc(100vh - 20px);
+                }
+            }
             iframe {
                 width: 100vw;
                 height: 100vh;
@@ -12,6 +22,8 @@
     </head>
 
     <body>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1UVEGO35qp-I7vIYH3f9NbXCpTFYWCtA&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+        <div class="googlemap" style="margin-left: 50px; margin-right: 50px;">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1UVEGO35qp-I7vIYH3f9NbXCpTFYWCtA&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+        </div>
     </body>
 </html>
